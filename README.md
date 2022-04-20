@@ -10,5 +10,7 @@
 ## Installation  
 
 ```bash
-
+npm i eslint eslint-plugin-import eslint-plugin-unicorn eslint-plugin-jsdoc eslint-config-chase --save-dev
 ```
+
+Then, extend your config file with `chase`.
