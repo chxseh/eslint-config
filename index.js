@@ -24,7 +24,6 @@ module.exports = {
     ],
 
     rules: {
-        "no-unused-vars": `error`,
         "no-redeclare": `off`,
         quotes: [
             `error`,
