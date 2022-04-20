@@ -1,0 +1,6 @@
+# Packages
+node_modules/
+
+# Misc
+*.bak
+.DS_Store

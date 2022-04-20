@@ -1,0 +1,35 @@
+{
+    "name": "eslint-config-chase",
+    "version": "1.0.0",
+    "description": "Personal ESLint Config",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint --fix --ext .js ."
+    },
+    "author": "Chase <c@chse.dev> (https://chse.dev)",
+    "license": "MIT",
+    "homepage": "https://github.com/chxseh/eslint-config",
+    "keywords": [
+        "eslint"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chxseh/eslint-config.git"
+    },
+    "dependencies": {
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-jsdoc": "^39.2.3",
+        "eslint-plugin-unicorn": "^42.0.0"
+    },
+    "peerDependencies": {
+        "eslint": "^8.13.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-plugin-jsdoc": "^39.2.3",
+        "eslint-plugin-unicorn": "^42.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^8.13.0"
+    }
+}
