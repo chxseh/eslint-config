@@ -8,13 +8,14 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    if: github.actor != 'dependabot[bot]'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: npm install
-      - run: npm lint
+      - run: npm run lint
       - uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
