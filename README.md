@@ -14,3 +14,22 @@ npm i eslint eslint-plugin-import eslint-plugin-unicorn eslint-plugin-jsdoc esli
 ```
 
 Then, extend your config file with `chase`.
+
+```json
+// .eslintrc.json
+{
+    "env": {
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "chase"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {},
+    "globals": {}
+}
+```
