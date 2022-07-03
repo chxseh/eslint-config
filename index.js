@@ -54,10 +54,10 @@ module.exports = {
         ],
         "no-console": `off`,
         "no-restricted-syntax": [
-            `error`,
+            `warn`,
             {
-                selector: `CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]`,
-                message: `Unexpected property on console object was called`
+                selector: `CallExpression[callee.object.name='console'][callee.property.name=/^(log)$/]`,
+                message: `Do not console.log`
             }
         ],
         "brace-style": [
